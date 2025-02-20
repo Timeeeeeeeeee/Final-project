@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบสำหรับแอดมิน</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">  
+</head>
+<body>
+    <!-- พาร์ติเคิล background -->
+    <div class="particles" id="particles"></div>
+    
+    <div class="login-container">
+        <div class="login-header">
+            <div class="logo">
+                <i class="fas fa-user-shield"></i>
+            </div>
+            <h1>เข้าสู่ระบบแอดมิน</h1>
+        </div>
+        <div id="loginSection">
+            <form id="loginForm">
+        <div class="login-body">
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">ชื่อผู้ใช้</label>
+                    <input type="text" id="username" name="username" placeholder="กรุณากรอกชื่อผู้ใช้" required>
+                    <div class="input-icon">ภาษา
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">รหัสผ่าน</label>
+                    <input type="password" id="password" name="password" placeholder="กรุณากรอกรหัสผ่าน" required>
+                    <div class="input-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                </div>
+                
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">จำฉันไว้ในระบบ</label>
+                </div>
+                <a href="./menu.html">
+                <button type="submit"><i class="fas fa-sign-in-alt button-icon" ></i>เข้าสู่ระบบ</button>
+                </a>
+                <div id="errorMessage" class="error-message">
+                    <i class="fas fa-exclamation-circle"></i> ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง
+                </div>
+                
+                <div class="forgot-password">
+                    <a href="#">ลืมรหัสผ่าน?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>

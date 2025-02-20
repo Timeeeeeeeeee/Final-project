@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>หน้าเว็บไซต์</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        /* เมนู */
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        
+        nav li {
+            display: inline-block;
+            padding: 20px 40px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            position: relative;
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #00ffff;
+            left: 0;
+            bottom: -5px;
+            transition: 0.3s;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        nav a:hover {
+            color: #00ffff;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            transition: 0.3s;
+        }
+
+        /* เนื้อหา */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .card h2 {
+            color: #00ffff;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./prodoct.html">สินค้า</a></li>
+         
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+            <p>ค้นพบประสบการณ์ใหม่ๆ ที่จะทำให้คุณประทับใจ</p>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <h2>บริการของเรา</h2>
+            <p>บริการคุณภาพสูงที่ตอบโจทย์ทุกความต้องการของคุณ</p>
+        </div>
+        <div class="card">
+            <h2>ผลงานของเรา</h2>
+            <p>ผลงานที่ผ่านมาของเราที่การันตีด้วยความพึงพอใจของลูกค้า</p>
+        </div>
+        <div class="card">
+            <h2>ติดต่อเรา</h2>
+            <p>พร้อมให้คำปรึกษาและบริการคุณตลอด 24 ชั่วโมง</p>
+        </div>
+    </section>
+</body>
+</html>
